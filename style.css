@@ -1,3 +1,27 @@
-* {
-    border: 2px solid red;
+* { /*border and margin to make individual elements visible*/
+    border: 1px solid red;
+    margin: 1px;
+}
+
+.container {
+    /*height: 500px;
+    width: 410px;*/
+}
+
+.row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#display {
+    height: 100px;
+    width: 400px;
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100px;
 }

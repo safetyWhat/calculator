@@ -1,6 +1,7 @@
 let num1 = 7 //prompt('Enter a number between 1 and 10', '');
 let num2 = 2 //prompt('Enter a number between 1 and 10', '');
-let oper = "";
+let operator = "";
+let display = document.getElementById("display")
 
 let operate = function(a, b, c) {
     if (c === "addition") {
