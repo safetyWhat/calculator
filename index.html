@@ -5,35 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div id="display"></div>
         <div class="numPad">
             <div class="row" id="row1">
-                <button class="button" id="1">1</button>
-                <button class="button" id="2">2</button>
-                <button class="button" id="3">3</button>
-                <button class="button" id="addition">+</button>
+                <button class="button" id="1" onclick="buildNumber(numArray, 1)">1</button>
+                <button class="button" id="2" onclick="buildNumber(numArray, 2)">2</button>
+                <button class="button" id="3" onclick="buildNumber(numArray, 3)">3</button>
+                <button class="button" id="addition" onclick="convertNum1('addition')">+</button>
             </div>
             <div class="row" id="row2">
-                <button class="button" id="4">4</button>
-                <button class="button" id="5">5</button>
-                <button class="button" id="6">6</button>
-                <button class="button" id="subtract">-</button>
+                <button class="button" id="4" onclick="buildNumber(numArray, 4)">4</button>
+                <button class="button" id="5" onclick="buildNumber(numArray, 5)">5</button>
+                <button class="button" id="6" onclick="buildNumber(numArray, 6)">6</button>
+                <button class="button" id="subtract" onclick="convertNum1('subtract')">-</button>
             </div>
             <div class="row" id="row3">
-                <button class="button" id="7">7</button>
-                <button class="button" id="8">8</button>
-                <button class="button" id="9">9</button>
-                <button class="button" id="multiply">x</button>
+                <button class="button" id="7" onclick="buildNumber(numArray, 7)">7</button>
+                <button class="button" id="8" onclick="buildNumber(numArray, 8)">8</button>
+                <button class="button" id="9" onclick="buildNumber(numArray, 9)">9</button>
+                <button class="button" id="multiply" onclick="convertNum1('multiply')">x</button>
             </div>
             <div class="row" id="row4">
                 <button class="button" id="clear">C</button>
-                <button class="button" id="0">0</button>
-                <button class="button" id="equals">=</button>
-                <button class="button" id="divide">/</button>
+                <button class="button" id="0" onclick="buildNumber(numArray, 0)">0</button>
+                <button class="button" id="equals" onclick="operate()">=</button>
+                <button class="button" id="divide" onclick="convertNum1('divide')">/</button>
             </div>
         </div>
     </div>

@@ -15,6 +15,7 @@ Create functions for:
 Create a function that takes num1 and num2 and operates them based on the operator selected. //done
 
 1. When a number is clicked it gets added to the end of the displayed character.
+    build an array using push. Once the operator is clicked the array is converted to number.
 2. When an operator( +, -, x, / ) is clicked:
     a. the number in the display is logged as num1.
     b. the clicked operator is logged as operator.
